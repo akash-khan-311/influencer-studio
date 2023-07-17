@@ -3,6 +3,9 @@
   h1 {
     font-size: 35px;
   }
+  h2 {
+    font-size: 28px;
+  }
   p {
     font-size: 15px;
   }
@@ -22,9 +25,7 @@
     width: 90%;
     text-align: center;
   }
-  #main-section {
-    padding: 10px;
-  }
+
   .sponsor-part {
     margin: 0;
   }
@@ -36,6 +37,11 @@
     width: 70px;
     padding: 10px 0;
     margin: 0 auto;
+  }
+  .popular-items-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 30px;
   }
 }
 
@@ -63,9 +69,7 @@
     width: 90%;
     text-align: center;
   }
-  #main-section {
-    padding: 10px;
-  }
+
   .sponsor-part {
     margin: 0;
   }
@@ -77,6 +81,18 @@
     width: 100px;
     margin: 0 auto;
     padding: 20px 0;
+  }
+  .popular-items-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .popular-card {
+    width: 250px;
+    margin: 20px auto;
   }
 }
 
@@ -105,9 +121,7 @@
     margin: 0 auto;
     padding-left: 20px;
   }
-  #main-section {
-    padding: 10px;
-  }
+
   .sponsor-part {
     margin: 0;
   }
@@ -119,6 +133,15 @@
     width: 100px;
     margin: 0 auto;
     padding: 20px 0;
+  }
+  .popular-items-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  .popular-card {
+    width: 200px;
+    margin: 20px auto;
   }
 }
 

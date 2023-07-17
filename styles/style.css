@@ -246,8 +246,9 @@ span {
 }
 
 /* =======2. Main Part Styles======== */
-#main-section {
-  padding: 0 250px;
+#main-section .container {
+  max-width: 1010px;
+  margin: 0 auto;
 }
 /* Sponsor Styles */
 .sponsor-part {
@@ -271,4 +272,61 @@ span {
 .sponsor-items img:first-child {
   padding-top: 0;
 }
+/* Popular Styles */
+#popular-section {
+  background: var(--main-bg-color);
+  padding: 50px 0;
+}
+.popular-text {
+  text-align: center;
+  color: white;
+}
+.popular-items-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+.popular-card {
+  margin-top: 20px;
+  background: var(--main-bg-color);
+  padding: 20px;
+  box-shadow: 0 0 10px 2px #000;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: white;
+}
+.card-img {
+  overflow: hidden;
+}
+.card-img img {
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  -webkit-transition: ease-in 0.2s;
+  -moz-transition: ease-in 0.2s;
+  -ms-transition: ease-in 0.2s;
+  -o-transition: ease-in 0.2s;
+  width: 100%;
+}
+
+.card-img img:hover {
+  transform: scale(1.1);
+}
+.card-title {
+  margin: 10px 0;
+}
+.card-body .price {
+  font-size: 24px;
+  margin: 0;
+}
+.review-star i {
+  color: goldenrod;
+}
+
+.card-des {
+  font-size: 14px;
+}
+
 /* =======3. Footer Part Styles======== */
