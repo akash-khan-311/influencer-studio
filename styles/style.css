@@ -163,6 +163,7 @@ span {
 }
 
 .btn {
+  font-family: var(--main-font);
   color: var(--main-heading-color);
   display: inline-block;
   background-image: var(--button-color);
@@ -327,6 +328,26 @@ span {
 
 .card-des {
   font-size: 14px;
+}
+/* Feature Part Styles */
+#feature-part {
+  background: url(../images/feature-bg.jpg) no-repeat center / cover fixed;
+}
+.feature-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  color: white;
+}
+.feature-img {
+  width: 30%;
+}
+.feature-img img {
+  width: 100%;
+}
+.feature-content {
+  width: 60%;
 }
 
 /* =======3. Footer Part Styles======== */
