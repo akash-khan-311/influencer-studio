@@ -246,4 +246,29 @@ span {
 }
 
 /* =======2. Main Part Styles======== */
+#main-section {
+  padding: 0 250px;
+}
+/* Sponsor Styles */
+.sponsor-part {
+  margin: 100px 0;
+}
+.sponsor-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 30px 0;
+}
+.sponsor-items img {
+  width: 100px;
+  margin-right: 10px;
+  padding-top: 20px;
+}
+.sponsor-items img:first-child {
+  padding-top: 0;
+}
 /* =======3. Footer Part Styles======== */
