@@ -47,6 +47,15 @@
 ---------------------------------- */
 
 /* --→ Animation ←-- */
+@keyframes camera {
+  to {
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -o-transform: translateY(40px);
+  }
+}
 
 /* ----------------------------------
 		01. Root - Custom Properties		
@@ -61,9 +70,9 @@
   --secondary-color: #e02c6d;
   --button-color: linear-gradient(
     to right,
-    #181733 0%,
-    #163164 51%,
-    #181733 100%
+    #290325 0%,
+    #902c5d 51%,
+    #290325 100%
   );
   /* --→ Fonts ←-- */
   --main-font: "Poppins", sans-serif;
@@ -162,6 +171,15 @@ span {
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: none;
 }
 
 .btn:hover {
@@ -203,6 +221,28 @@ span {
 }
 .nav-item li:hover a {
   color: var(--secondary-color);
+}
+
+/* Banner Part Styles */
+.banner-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.banner-content {
+  width: 50%;
+}
+.banner-content h1 {
+  color: white;
+}
+
+.banner-img {
+  animation: camera 1.2s ease-in-out 1s infinite alternate;
+  -webkit-animation: camera 1.2s ease-in-out 1s infinite alternate;
 }
 
 /* =======2. Main Part Styles======== */
