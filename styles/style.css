@@ -1,0 +1,209 @@
+/*	==========================================================
+	-------------------->>> CSS Styles <<<--------------------
+	==========================================================
+/*	==========================================================
+	*	Template Name:
+	* 	Template URL:
+	*	Template Descriptions:
+		---------------------
+	
+	*	About Author
+		------------
+		Author Name: Akash Khan
+		Author URL: http://akashkhan.com
+		Support: akashcc48@gmail.com
+	*	Get In Touch
+		------------
+		GitHub: https://github.com/akash-khan-311
+		Facebook: https://www.facebook.com/iyaRahmanirRahim
+		
+		Telegram: https://t.me/AKASHALIBD24
+	
+	*	Version Update
+		--------------
+		Version: 1.0
+	
+/*	=========================================================
+/* ==========================================================
+	Table of Content
+	----------------
+	00. Import Required Files
+	01. Root - Custom Properties
+	02. Utilities
+	03. Common Class Styles
+	04. Header part Styles
+	05. Main Part Styles
+		a. Nav Bar Styles
+		b. Banner Styles
+
+	06. Footer Part Styles
+	07. 
+	08. 
+	09.
+	10.
+ ==========================================================
+/* ----------------------------------
+		00. Import Required Files		
+---------------------------------- */
+
+/* --→ Animation ←-- */
+
+/* ----------------------------------
+		01. Root - Custom Properties		
+---------------------------------- */
+
+:root {
+  /* --→ Colors ←-- */
+  --main-bg-color: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  --main-color: #2d25a0;
+  --footer-bg-color: #06011a;
+  --main-heading-color: #3a3a3a;
+  --secondary-color: #e02c6d;
+  --button-color: linear-gradient(
+    to right,
+    #181733 0%,
+    #163164 51%,
+    #181733 100%
+  );
+  /* --→ Fonts ←-- */
+  --main-font: "Poppins", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --text-font: "Poppins", sans-serif;
+  --text-size: 16px;
+  --secondary-text-size: 14px;
+  --heading1-size: 52px;
+  --heading2-size: 38px;
+  --heading3-size: 28px;
+}
+
+/* ----------------------------------
+		02. Utilities		
+---------------------------------- */
+
+body {
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-size: var(--text-size);
+  line-height: 1.5em;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--heading1-size);
+  color: var(--main-heading-color);
+  line-height: 1.3em;
+}
+
+h2 {
+  font-size: var(--heading2-size);
+  color: var(--main-text-color);
+  line-height: 1.3em;
+}
+
+h3 {
+  font-size: var(--heading3-size);
+  color: var(--main-text-color);
+  line-height: 1.3em;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--main-heading-color);
+}
+
+p {
+  font-size: var(--text-size);
+  line-height: 1.3em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+input,
+textarea,
+input:focus,
+textarea:focus {
+  display: inline-block;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+span {
+  color: var(--secondary-color);
+}
+
+/* ----------------------------------
+		03. Common Class Styles	
+---------------------------------- */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  color: var(--main-heading-color);
+  display: inline-block;
+  background-image: var(--button-color);
+  padding: 10px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+.btn:hover {
+  background-position: right center;
+}
+
+/* =======1. Header Part Styles======== */
+#header-section {
+  background: var(--main-bg-color);
+  color: white;
+  padding: 30px 0;
+}
+/* Navbar Styles */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav .logo h2 {
+  margin: 0;
+}
+.nav-item {
+  display: flex;
+}
+
+.nav-item li {
+  margin-right: 20px;
+}
+.nav-item li:last-child {
+  margin-right: 0;
+}
+.nav-item li a {
+  color: white;
+  transition: ease-in 0.1s;
+  -webkit-transition: ease-in 0.1s;
+  -moz-transition: ease-in 0.1s;
+  -ms-transition: ease-in 0.1s;
+  -o-transition: ease-in 0.1s;
+}
+.nav-item li:hover a {
+  color: var(--secondary-color);
+}
+
+/* =======2. Main Part Styles======== */
+/* =======3. Footer Part Styles======== */
