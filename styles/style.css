@@ -66,7 +66,7 @@
   --main-bg-color: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   --main-color: #2d25a0;
   --footer-bg-color: #06011a;
-  --main-heading-color: #3a3a3a;
+  --main-heading-color: white;
   --secondary-color: #e02c6d;
   --button-color: linear-gradient(
     to right,
@@ -90,7 +90,7 @@
 ---------------------------------- */
 
 body {
-  color: var(--main-text-color);
+  color: var(--main-heading-color);
   font-family: var(--main-font);
   font-size: var(--text-size);
   line-height: 1.5em;
@@ -107,7 +107,7 @@ h1 {
 
 h2 {
   font-size: var(--heading2-size);
-  color: var(--main-text-color);
+  color: var(--main-heading-color);
   line-height: 1.3em;
 }
 
@@ -127,6 +127,7 @@ a {
 p {
   font-size: var(--text-size);
   line-height: 1.3em;
+  color: var(--main-heading-color);
 }
 
 ul {
@@ -173,7 +174,6 @@ span {
   transition: 0.5s;
   background-size: 200% auto;
   cursor: pointer;
-  color: white;
   font-weight: bold;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -190,7 +190,7 @@ span {
 /* =======1. Header Part Styles======== */
 #header-section {
   background: var(--main-bg-color);
-  color: white;
+
   padding: 30px 0;
 }
 /* Navbar Styles */
@@ -213,7 +213,6 @@ span {
   margin-right: 0;
 }
 .nav-item li a {
-  color: white;
   transition: ease-in 0.1s;
   -webkit-transition: ease-in 0.1s;
   -moz-transition: ease-in 0.1s;
@@ -237,9 +236,6 @@ span {
 .banner-content {
   width: 50%;
 }
-.banner-content h1 {
-  color: white;
-}
 
 .banner-img {
   animation: camera 1.2s ease-in-out 1s infinite alternate;
@@ -259,7 +255,6 @@ span {
 }
 .popular-text {
   text-align: center;
-  color: white;
 }
 .popular-items-container {
   display: grid;
@@ -276,7 +271,6 @@ span {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
-  color: white;
 }
 .card-img {
   overflow: hidden;
@@ -317,7 +311,6 @@ span {
   justify-content: space-between;
   align-items: center;
   padding: 50px 0;
-  color: white;
 }
 .feature-img {
   width: 30%;
@@ -346,6 +339,7 @@ span {
   width: 100px;
   margin-right: 10px;
   padding-top: 20px;
+  margin: 0 auto;
 }
 .sponsor-items img:first-child {
   padding-top: 0;
@@ -358,4 +352,42 @@ span {
     rgba(9, 29, 85, 1) 0.2%,
     rgba(0, 0, 0, 1) 100.2%
   );
+  text-align: center;
+  padding: 50px 0;
+}
+.footer-content h1,
+.footer-content p {
+  margin: 0;
+}
+.icon {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid white;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  margin-right: 10px;
+}
+
+.icon i:hover {
+  background: white;
+  color: var(--secondary-color);
 }
